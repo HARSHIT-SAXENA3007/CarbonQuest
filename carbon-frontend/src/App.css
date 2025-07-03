@@ -1,0 +1,139 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app-container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  background-color: var(--bg);
+  color: var(--text);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-btn {
+  background: none;
+  color: var(--text);
+  border: 2px solid var(--text);
+  margin-top: 1rem;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+}
+
+body.dark-mode {
+  --bg: #1e1e1e;
+  --text: #f0f0f0;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+h4 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+/* Dark Mode Global Styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input, button, pre {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #333;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.result {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #007BFF; /* Bootstrap Blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker Blue */
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #04dd66; /* teal-ish */
+  font-weight: bold;
+}
+
