@@ -63,4 +63,4 @@ jobs:
         with:
           app-name: 'carbonquest-api-3007'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9F31530DD7D541FF99A70201CC796ED4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5789986E430244CB8DE88693E74685CC }}
