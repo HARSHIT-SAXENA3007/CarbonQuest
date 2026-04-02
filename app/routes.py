@@ -1,10 +1,12 @@
 import os
+import sys
 import pandas as pd
 import requests
 from dotenv import load_dotenv
 from flask import Blueprint, request, jsonify
 from flask import send_from_directory
 from .emissions import calculate_emissions
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 from ml.model_trainer import run_kmeans_clustering
 
 load_dotenv()
@@ -101,8 +103,13 @@ def calculate():
         }
 
         df = pd.DataFrame([entry])
-        df.to_csv('data/user_data.csv', mode='a', header=not os.path.exists('data/user_data.csv'), index=False)
-
+        os.makedirs("data", exist_ok=True)
+        df.to_csv(
+            "data/user_data.csv",
+            mode="a",
+            header=not os.path.exists("data/user_data.csv"),
+            index=False
+        )
         df_clustered = run_kmeans_clustering()
         user_cluster = int(df_clustered.iloc[-1]["Cluster"])
 
