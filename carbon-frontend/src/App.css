@@ -137,3 +137,9 @@ button:hover {
   font-weight: bold;
 }
 
+.error-message {
+  color: #ff7b7b;
+  text-align: center;
+  margin-top: 1rem;
+}
+
